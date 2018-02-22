@@ -33,9 +33,10 @@ D = D.rolling(int(len(D) / 30)).mean()
 for a in A:
     cnt += 1
     plt.subplot(8, 3, cnt)
-    plt.plot(np.array(D[a]), color[(cnt - 1) % 7])
-    plt.title(a, fontsize='large')
+    clr = color[(cnt - 1) % 7]
+    plt.plot(np.array(D[a]), clr)
+    plt.title(a, fontsize='large', verticalalignment='center', color=clr)
     if cnt < 22:
         plt.tick_params(labelbottom='off')
+plt.suptitle("%s  >>>>  %s" %(D.index[0].date(), D.index[-1].date()), fontsize=16, color='tab:brown')
 plt.show()
-print("Date Range is from %s to %s" % (D.index[0].date(), D.index[-1].date()))
