@@ -1,6 +1,6 @@
-# Get data from FitBit API and Save to HDF5 file
-## Getting Data from Fitbit
-### Fitbit API Website
+## Get data from FitBit API and Save to HDF5 file
+
+### Getting Data from Fitbit Web-API
 * Go to https://dev.fitbit.com/ and Register an app.
 * After registering, open the app details and go to OAuth2.0 Tutorial Page in a new tab:  https://dev.fitbit.com/apps/oauthinteractivetutorial
 * In the webpage, copy the app details and click the redirect website link. 
